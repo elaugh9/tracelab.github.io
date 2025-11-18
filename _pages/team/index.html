@@ -8,7 +8,6 @@ permalink: /team/
 
 <h1 style="padding-left: 40px;">{{ page.title }}</h1>
 
-<div class="container" style="padding-left: 40px;">
     
 <!-- Staff -->
 {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
@@ -17,7 +16,8 @@ permalink: /team/
 
 <div class="card team-member-card">
     <div class="row mt-3">
-        <div class="col-md-2">
+        <div class="col-md-2 col-sm-3" style="padding-left: 40px;">
+
             
                 <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
                      class="card-img img-responsive img-thumbnail"
@@ -48,7 +48,8 @@ permalink: /team/
   <div class="row mt-3 align-items-center">
 
     <!-- IMAGE (same size as before) -->
-    <div class="col-md-2 col-sm-3">
+    <div class="col-md-2 col-sm-3" style="padding-left: 40px;">
+
       <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
            class="card-img img-responsive img-thumbnail"
            style="max-width: 100px;"/>
