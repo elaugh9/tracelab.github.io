@@ -2,7 +2,7 @@
 layout: member
 category: student
 title: Elaf Almahmoud
-image: elaf.jpg            
+image: elaf.png            
 role: PhD student
 permalink: '/team/elaf-almahmoud'
 social:
