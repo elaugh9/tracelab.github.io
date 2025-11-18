@@ -6,7 +6,7 @@ sitemap: false
 permalink: /
 ---
 # TRACE Lab
-**Trustworthy Artificial IntelligenCE Laboratory · University of Cambridge**  
+**TRustworthy Artificial IntelligenCE Laboratory · University of Cambridge**  
 **Centre for Human-Inspired Artificial Intelligence · Institute of Technology and Humanity**
 
 ### About the Lab
