@@ -5,6 +5,9 @@ excerpt: "RT2 Lab at Institut Curie"
 sitemap: false
 permalink: /
 ---
+# TRACE Lab
+**Trustworthy Artificial IntelligenCE Laboratory · University of Cambridge**  
+**Centre for Human-Inspired Artificial Intelligence · Institute of Technology and Humanity**
 
 ### About the Lab
 
