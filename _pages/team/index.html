@@ -8,8 +8,7 @@ permalink: /team/
 
 <h1 class="team-title">{{ page.title }}</h1>
 
-<!-- Staff -->
-<h2 style="padding-left: 40px;">Staff</h2>
+<!-- Staff  <h2 style="padding-left: 40px;">Staff</h2> -->
 {% assign staff = site.posts | where: 'category', 'staff' | sort: 'date' %}
 {% for member in staff %}
   {% assign link = member.website | default: member.url %}
@@ -35,8 +34,7 @@ permalink: /team/
   </div>
 {% endfor %}
 
-<!-- Students -->
-<h2 style="padding-left: 40px; margin-top: 30px;">Students</h2>
+<!-- Students <h2 style="padding-left: 40px; margin-top: 30px;">Students</h2> -->
 {% assign students = site.posts | where: 'category', 'student' | sort: 'date' %}
 {% for member in students %}
   {% assign link = member.website | default: member.url %}
