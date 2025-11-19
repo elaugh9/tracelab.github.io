@@ -8,52 +8,32 @@ permalink: /team/
 
 <h1 style="padding-left: 40px;">{{ page.title }}</h1>
 
-    
 <!-- Staff -->
-{% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
-{% for member in members %}
-{% assign link = member.website | default: member.url %}
+<h2 style="padding-left: 40px;">Staff</h2>
+{% assign staff = site.posts | where: 'category', 'staff' | sort: 'date' %}
+{% for member in staff %}
+  {% assign link = member.website | default: member.url %}
+  <div class="card team-member-card">
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-2 col-sm-3" style="padding-left: 40px;">
+        <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+             class="card-img img-responsive img-thumbnail"
+             style="max-width: 100px;" />
+      </div>
 
-<div class="card team-member-card">
-    <div class="row mt-3">
-        <div class="col-md-2 col-sm-3" style="padding-left: 40px;">
-
-            
-                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-                     class="card-img img-responsive img-thumbnail"
-                     style="max-width: 100px;"
-
-                
-         
+      <div class="col-md-10 col-sm-9">
+        <div class="card-body p-0">
+          <h4 class="card-title">
+            <a href="{{ link }}" target="_blank" rel="noopener">
+              {{ member.title }}
+            </a>
+          </h4>
+          <p class="card-text">{{ member.role }}</p>
         </div>
-
-        <div class="col-md-10">
-            <div class="card-body">
-                <h4 class="card-title">
-                    <a href="{{ link }}" target="_blank" rel="noopener">
-                        {{ member.title }}
-                    </a>
-                </h4>
-                <p class="card-text">{{ member.role }}</p>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
+  </div>
 {% endfor %}
-
-<!-- Students -->
-{% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
-{% for member in members %}
-<div class="card team-member-card">
-  <div class="row mt-3 align-items-center">
-
-    <!-- IMAGE (same size as before) -->
-    <div class="col-md-2 col-sm-3" style="padding-left: 40px;">
-
-      <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
-           class="card-img img-responsive img-thumbnail"
-           style="max-width: 100px;"/>
-    </div>
 
     <!-- NAME + ROLE (original font sizes) -->
     <div class="col-md-10 col-sm-9">
